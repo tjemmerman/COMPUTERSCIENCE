@@ -9,7 +9,7 @@ int x;
 int y;
 int speed = 1;
 int value = 0;
-int counter = 1;
+//int counter = 1;
 Textfield userinputTextField;
 Button enter;
 Button clear;
@@ -44,12 +44,11 @@ void draw() {
   rect2 = new Rectangle(x, y, 50, 50);
 
   if (rect1.intersects(rect2)) {
-    //String sentence = "The rectangles have hit";
-    //textFont(f);
-    //fill(0);
-    //text(sentence, 100, 900);
-    counter = counter + 1;
-    println(str(counter));
+    textFont(f);
+    String sentence = "The rectangles have hit";
+    text(sentence, 100, 900);
+    //counter = counter + 1;
+    //println(str(counter));
     }  
   
 }
