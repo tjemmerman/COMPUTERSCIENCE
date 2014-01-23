@@ -76,12 +76,12 @@ void keyPressed() {
 
 void Enter() {
  speed = Integer.parseInt(userinputTextField.getText());
-background(0);
+background(255);
 }
 
 void Clear() {
   userinputTextField.setText("");
    speed = 1;
-  background(0);
+  background(255);
 }
 
